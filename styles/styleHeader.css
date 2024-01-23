@@ -1,0 +1,94 @@
+/* Importation des polices en local */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+#Bandeau {
+  display: flex;
+  justify-content: space-between;
+}
+/* Taille de la grosse image de présentation */
+#Board {
+  object-fit: contain;
+  width: 45%;
+  margin-top: 70px;
+  margin-right: 50px;
+}
+
+#HeaderBlocPrincipal {
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-image: url("../medias/background_desktop.svg");
+  padding-bottom: 60px;
+  background-color: hsl(193, 100%, 96%);
+}
+#HeaderBlocGauche {
+  margin-right: 150px;
+  margin-top: 100px;
+  padding-left: 60px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+#Logo {
+  margin-top: 40px;
+  margin-left: 60px;
+  object-fit: contain;
+}
+/* Classe qui agit sur les boutons */
+.CallAction {
+  font-weight: 700;
+}
+#GetStart:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+#TryIt:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* Bouton try it */
+#TryIt {
+  margin-top: 35px;
+  margin-right: 70px;
+  border: solid;
+  border-radius: 40px;
+  background-color: white;
+  padding: 10px 45px;
+  border-color: white;
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  text-align: center;
+}
+/* Bouton get start */
+#GetStart {
+  border: solid;
+  border-radius: 40px;
+  background-color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  text-align: center;
+  margin-right: 105px;
+  margin-left: 105px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  right: 100px;
+  margin-top: 40px;
+}
+/* Texte en dessous du h1 */
+#Text_Presentation {
+  width: 108%;
+}

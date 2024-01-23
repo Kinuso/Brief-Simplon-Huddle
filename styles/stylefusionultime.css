@@ -1,0 +1,339 @@
+
+/* Importation des polices en local */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
+}
+
+/* CSS Header */
+
+
+#Bandeau {
+  display: flex;
+  justify-content: space-between;
+}
+/* Taille de la grosse image de présentation */
+#Board {
+  object-fit: contain;
+  width: 45%;
+  margin-top: 70px;
+  margin-right: 50px;
+}
+
+#HeaderBlocPrincipal {
+  display: flex;
+  justify-content: center;
+}
+header {
+  background-image: url("../medias/background_desktop.svg");
+  padding-bottom: 60px;
+  background-color: hsl(193, 100%, 96%);
+}
+#HeaderBlocGauche {
+  margin-right: 150px;
+  margin-top: 100px;
+  padding-left: 60px;
+}
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+body {
+  font-family: "OpenSans", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+}
+#Logo {
+  margin-top: 40px;
+  margin-left: 60px;
+  object-fit: contain;
+}
+/* Classe qui agit sur les boutons */
+.CallAction {
+  font-weight: 700;
+}
+#GetStart:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+#GetStart2:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+#TryIt:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+/* Bouton try it */
+#TryIt {
+  margin-top: 35px;
+  margin-right: 70px;
+  border: solid;
+  border-radius: 40px;
+  background-color: white;
+  padding: 10px 45px;
+  border-color: white;
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  text-align: center;
+}
+/* Bouton get start */
+#GetStart {
+  border: solid;
+  border-radius: 40px;
+  background-color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  text-align: center;
+  margin-right: 105px;
+  margin-left: 105px;
+  color: white;
+  padding: 10px;
+  position: relative;
+  right: 100px;
+  margin-top: 40px;
+}
+/* bouton get start au milieu de la page */
+#GetStart2 {
+  border: solid;
+  border-radius: 40px;
+  background-color: hsl(322, 100%, 66%);
+  border-color: hsl(322, 100%, 66%);
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  text-align: center;
+  margin: 0 105px;
+  color: white;
+  padding: 2%;
+  position: relative;
+  width: 30%;
+}
+
+/* Texte en dessous du h1 */
+#Text_Presentation {
+  width: 108%;
+}
+
+
+/*  CSS DU BODY */
+main h2 {
+  font-family: "Poppins", sans-serif;
+}
+main p {
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  margin: 50px 10%;
+  width: 80%;
+}
+/* Ombre des trois bloc, définition de la hauteur, margin en bas */
+.mainbloc1 {
+  height: 400px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  border-radius: 10px;
+}
+
+/* definition de la taille des images */
+.blocintimg img {
+  width: 400px;
+  margin: 20px;
+  justify-content: center;
+}
+
+.blocintimg2 img {
+  width: 400px;
+  margin: 20px;
+  justify-content: center;
+}
+
+/* définition de la position des images */
+.blocintimg {
+  display: flex;
+  justify-content: flex-end;
+  max-width: 50%;
+}
+.blocintimg2 {
+  max-width: 40%;
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 10%;
+  object-fit: cover;
+}
+/* définition de la position + taille du texte */
+.blocinttext {
+  width: 40%;
+  padding-left: 10%;
+}
+.blocinttext2 {
+  width: 40%;
+}
+/* définition de la couleur + weight */
+.blocinttext > p {
+  font-weight: 400;
+  color: hsl(208, 11%, 55%);
+}
+
+.blocinttext2 > p {
+  font-weight: 400;
+  color: hsl(208, 11%, 55%);
+}
+
+.blocinttext > h2 {
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+.blocinttext2 > h2 {
+  font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+/* Bloc qui contient le Bouton à cheval entre le main et le footer */
+#boutonCentral {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-bottom:5%;
+  padding-top: 3%;
+  position: relative;
+  top: 130px;
+  background-color: white;
+  box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
+  border-radius: 10px;
+  margin: 0 130px;
+}
+
+/* CSS Footer */
+
+footer {
+  color: white;
+  width: 80%;
+  background-color: hsl(192, 100%, 9%);
+  margin-top: 60px;
+  padding: 5% 10%;
+  padding-top: 200px;
+}
+
+.footerMainContent {
+  display: flex;
+}
+
+footer li,
+a {
+  color: white;
+}
+
+
+footer ul {
+  list-style: none;
+}
+.footerLogoContact {
+  width: 20%;
+}
+.footerDoubleListe {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.footerDoubleListe a:link {
+  text-decoration: none;
+}
+
+.footerDoubleListe a:hover {
+  text-decoration: underline white;
+}
+.footerDoubleListe li {
+  margin-bottom: 20px;
+}
+
+.footerReseaux {
+  width: 20%;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footerReseaux a {
+  margin-right: 20px;
+}
+.footerContact li {
+  margin-bottom: 30px;
+  word-break: break-all; /* wrap extended text*/
+}
+
+.footerContact {
+  width: 40%;
+  margin-right: 5%;
+}
+.logo {
+  margin-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 0px;
+}
+
+.hoverpink:hover {
+  filter: invert(55%) sepia(30%) saturate(5579%) hue-rotate(293deg)
+    brightness(100%) contrast(102%);
+}
+
+.instagram {
+  filter: invert(100%) sepia(0%) saturate(5970%) hue-rotate(145deg)
+    brightness(122%) contrast(114%);
+}
+
+.instagram:hover {
+  filter: invert(55%) sepia(30%) saturate(5579%) hue-rotate(293deg)
+    brightness(100%) contrast(102%);
+}
+.footerLocation {
+  position: relative;
+  margin-left: 55px;
+}
+.footerLocation:before {
+  margin-left: -55px;
+  position: absolute;
+  content: url(../medias/location-dot-solid.svg);
+  height: 30px;
+}
+
+.footerTelephone {
+  position: relative;
+  margin-left: 55px;
+}
+.footerTelephone:before {
+  height: 30px;
+  margin-left: -55px;
+  position: absolute;
+  content: url(../medias/phone-volume-solid.svg);
+}
+
+.footerMail {
+  position: relative;
+  margin-left: 55px;
+}
+.footerMail:before {
+  height: 28px;
+  margin-left: -60px;
+  position: absolute;
+  content: url(../medias/icons8-gmail.svg);
+}
+
+.copyright {
+  position: absolute;
+  right: 50px;
+}
