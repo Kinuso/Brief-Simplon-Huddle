@@ -1,0 +1,198 @@
+@media screen and (max-width: 900px) {
+  html {
+    max-width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  header {
+    background-image: url(../medias/background_portable.svg);
+  }
+  body {
+    width: 100%;
+  }
+  #Logo {
+    margin-left: 20px;
+    width: 30%;
+  }
+  #TryIt {
+    width: 20%;
+    font-size: 70%;
+    margin-top: 35px;
+    margin-right: 20px;
+    padding: 1% 5%;
+  }
+  #HeaderBlocPrincipal {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #HeaderBlocGauche {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  h1 {
+    padding-top: 100px;
+    text-align: center;
+    font-size: 25px;
+  }
+  #Text_Presentation {
+    width: 80%;
+    text-align: center;
+  }
+  #GetStart {
+    color: white;
+    align-self: center;
+    margin-top: 40px;
+    width: 65%;
+    margin: 20px 0;
+    position: inherit;
+  }
+
+  #Board {
+    margin: 10% 10% 0 10%;
+    width: 80%;
+  }
+
+  main {
+    margin: 50px 5%;
+    width: 90%;
+  }
+
+  .mainbloc1 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .mainbloc2 {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .blocintimg {
+    max-width: 90%;
+    margin-top: 50px;
+  }
+  .blocintimg2 {
+    max-width: 90%;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .blocintimg img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  .blocintimg2 img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+
+  .blocinttext {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  .blocinttext2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 75%;
+    padding-left: 0;
+    text-align: center;
+    margin-bottom: 10%;
+  }
+  #boutonCentral {
+    margin: 0 1%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+  }
+
+  #GetStart2 {
+    margin: 0 105px;
+    color: white;
+    padding: 2%;
+    position: relative;
+    width: 60%;
+    font-size: 70%;
+  }
+  h2 {
+    font-size: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    color: white;
+    max-width: 100%;
+    background-color: hsl(192, 100%, 9%);
+    margin-top: 60px;
+    padding-top: 200px;
+    padding-bottom: 300px;
+  }
+
+  .footerContact li {
+    margin-bottom: 30px;
+  }
+
+  footer ul {
+    width: 250%;
+  }
+
+  .footerMainContent {
+    display: flex;
+    flex-direction: column;
+  }
+  .footerDoubleListe {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: space-around;
+  }
+
+  .footerReseaux {
+    margin-top: 30px;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+  }
+
+  .copyright {
+    width: 100%;
+    position: inherit right;
+    right: 0;
+    text-align: center;
+    font-size: 65%;
+  }
+  .footerReseaux a {
+    margin: 0 10px;
+  }
+}
