@@ -36,14 +36,19 @@ header {
   margin-top: 100px;
   padding-left: 60px;
 }
+
 h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  height: 100px;
 }
 body {
   font-family: "OpenSans", sans-serif;
   font-weight: 400;
   font-size: 18px;
+}
+body::-webkit-scrollbar {
+  display: none;
 }
 #Logo {
   margin-top: 40px;
@@ -135,10 +140,20 @@ main {
   justify-content: space-around;
   box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
   border-radius: 10px;
+  opacity: 0;
+  transform: translateX(50px); /* Initial position for slide-in from right */
+  transition: opacity 0.5s, transform 0.5s;
+}
+.mainbloc1.slide-in {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /* Ombre des trois bloc, définition de la hauteur, margin en bas */
 .mainbloc2 {
+  opacity: 0;
+  transform: translateX(-50px); /* Initial position for slide-in from left */
+  transition: opacity 0.5s, transform 0.5s;
   height: 400px;
   margin-bottom: 20px;
   display: flex;
@@ -147,7 +162,10 @@ main {
   box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
   border-radius: 10px;
 }
-
+.mainbloc2.slide-in {
+  opacity: 1;
+  transform: translateX(0);
+}
 /* definition de la taille des images */
 .blocintimg img {
   width: 70%;
@@ -174,6 +192,7 @@ main {
   padding-left: 10%;
   object-fit: cover;
 }
+
 /* définition de la position + taille du texte */
 .blocinttext {
   width: 40%;
@@ -202,6 +221,19 @@ main {
   font-weight: 700;
   color: hsl(192, 100%, 9%);
 }
+.mainbloc1,
+.mainbloc2,
+#boutonCentral {
+  opacity: 0;
+  transition: opacity 0.5s, transform 0.5s;
+}
+
+.mainbloc1.slide-in,
+.mainbloc2.slide-in,
+#boutonCentral.slide-in {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /* Bloc qui contient le Bouton à cheval entre le main et le footer */
 #boutonCentral {
@@ -216,6 +248,7 @@ main {
   box-shadow: 1px 1px 2px 3px hsla(0, 0%, 22%, 0.05);
   border-radius: 10px;
   margin: 0 130px;
+  transform: translateY(50px);
 }
 
 /* CSS Footer */
@@ -345,4 +378,63 @@ ul {
 .copyright {
   position: absolute;
   right: 50px;
+}
+
+/* Animation drole avec CSS / JAVASCRIPT */
+
+#ligneScroll {
+  z-index: 10000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 10px; /* Height of the scroll line */
+  border-radius: 10px;
+  background-color: blue; /* Color of the scroll line */
+  transition: width 0.3s; /* Animation duration */
+}
+
+/* Bouton up */
+
+#upButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px;
+  background-color: hsl(322, 100%, 66%);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 15px;
+  width: 41px;
+  height: 41px;
+}
+#upButton:hover {
+  opacity: 0.6;
+}
+
+/* pop up */
+#popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 100;
+}
+/* flou de la popup */
+.popupOpen {
+  z-index: 90;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+}
+/* blocage du scroll */
+body.no-scroll {
+  overflow: hidden;
 }
