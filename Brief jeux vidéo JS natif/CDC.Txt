@@ -1,0 +1,21 @@
+Cahier des charges du Puissance 4 :
+
+
+Regles///////////////
+
+        - Cadrillage de 6 des hauteurs par 7 de longueurs
+        - 2 Joueurs
+        - Le but est d'aligner 4 jeton en horizontal, vertical ou diagonal pour gagner
+
+
+
+
+Crée un array "cadrillage" de 7 cases de longueur, et 6 cases de hauteur
+
+Definir comme pour le morpion un joueur 1 qui commence, et au tour du joueur 1 passer sur le joueur 2 etc....
+
+Avoir une div dans laquelle je pourrais avoir mon cadrillage, surement a créer avec une grid qui se fera incrementer par rapport a où on clique 
+
+faire en sorte de cliquer en haut de la grid pour faire "tomber" le jeton dans le cadrillage avec une boucle de for ou while qui verifiera sur la ligne inférieur du cadrillage est remplie ou pas
+
+Avoir une boucle for qui verifiera le cadrillage pour voir les conditions de victoire 
